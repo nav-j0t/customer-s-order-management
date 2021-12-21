@@ -148,3 +148,32 @@ INSERT INTO Shipments (orderID,shipdate)
 VALUES ('o9','27 Jan 2021');
 INSERT INTO Shipments (orderID,shipdate)
 VALUES ('o10','1 Aug 2021');
+
+
+CREATE TABLE Products (
+  productID varchar(5),
+  productname varchar(50),
+  price varchar(50),
+  effective_date varchar(255),
+  PRIMARY KEY (productID));
+
+INSERT INTO Products (productID,productname,price,effective_date)
+VALUES ('pro1','iphone 12',55,'13 Nov 2022');
+INSERT INTO Products (productID,productname,price,effective_date)
+VALUES ('pro2','trimmer',88,'23 Oct 2021');
+INSERT INTO Products (productID,productname,price,effective_date)
+VALUES ('pro3','12V LED',22,'18 Dec 2021');
+INSERT INTO Products (productID,productname,price,effective_date)
+VALUES ('pro4','Christmas tree',65,'14 Aug 2022');
+INSERT INTO Products (productID,productname,price,effective_date)
+VALUES ('pro5','Bulbs',30,'18 Jun 2021');
+INSERT INTO Products (productID,productname,price,effective_date)
+VALUES ('pro6','TV',99,'18 Mar 2022');
+INSERT INTO Products (productID,productname,price,effective_date)
+VALUES ('pro7','knife',89,'16 Aug 2022');
+INSERT INTO Products (productID,productname,price,effective_date)
+VALUES ('pro8','vent',93,'23 Jun 2021');
+INSERT INTO Products (productID,productname,price,effective_date)
+VALUES ('pro9','Bag',36,'24 Feb 2022');
+INSERT INTO Products (productID,productname,price,effective_date)
+VALUES ('pro10','Table',90,'12 Feb 2022');
