@@ -54,3 +54,12 @@ WHERE inventory.productid IN (
     );
 
 
+-- This query is used to fetch all the products that we have no suppliers.
+
+SELECT  supplierid ,p.productID, p.productname, price, effective_date
+FROM inventory i 
+RIGHT OUTER JOIN products p ON i.productid=p.productid
+WHERE supplierID IS NULL
+ORDER BY p.productid;
+
+
