@@ -122,3 +122,29 @@ INSERT INTO Inventory (inventoryID,productID,store,quantity,supplierID)
 VALUES ('i9','pro9',1578,'966','s7');
 INSERT INTO Inventory (inventoryID,productID,store,quantity,supplierID)
 VALUES ('i10','pro1',2741,'447','s4');
+
+
+CREATE TABLE Shipments (
+  orderID varchar(5),
+  shipdate varchar(50));
+
+INSERT INTO Shipments (orderID,shipdate)
+VALUES ('o1','24 Mar 2022');
+INSERT INTO Shipments (orderID,shipdate)
+VALUES ('o2','25 Oct 2020');
+INSERT INTO Shipments (orderID,shipdate)
+VALUES ('o3','26 Oct 2022');
+INSERT INTO Shipments (orderID,shipdate)
+VALUES ('o4','21 Aug 2022');
+INSERT INTO Shipments (orderID,shipdate)
+VALUES ('o5','11 Nov 2022');
+INSERT INTO Shipments (orderID,shipdate)
+VALUES ('6','4 Apr 2022');
+INSERT INTO Shipments (orderID,shipdate)
+VALUES ('o7','28 Sep 2021');
+INSERT INTO Shipments (orderID,shipdate)
+VALUES ('o8','20 Sep 2022');
+INSERT INTO Shipments (orderID,shipdate)
+VALUES ('o9','27 Jan 2021');
+INSERT INTO Shipments (orderID,shipdate)
+VALUES ('o10','1 Aug 2021');
