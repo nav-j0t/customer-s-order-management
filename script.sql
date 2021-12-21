@@ -29,3 +29,34 @@ VALUES ('c9','Kim Garcia','712-782-5813','amet@aol.org',21,'Ap #223-6571 Quisque
 INSERT INTO Customers (customerID,name,phone,email,age,address)
 VALUES ('c10','Tana Tanner','318-535-8226','ante.ipsum.primis@protonmail.edu',45,'P.O. Box 160, 9504 Aenean St.');
 
+
+CREATE TABLE Orders (
+  orderID varchar(5),
+  customerID varchar(5),
+  order_date varchar(50),
+  status varchar(20),
+  paymentID varchar(5),
+  PRIMARY KEY (orderID),
+  FOREIGN KEY (customerID) REFERENCES Customers(customerID)
+  );
+
+INSERT INTO Orders (orderID,customerID,order_date,status,paymentID)
+VALUES ('o1','c1','25 May 2022','shipped','p1');
+INSERT INTO Orders (orderID,customerID,order_date,status,paymentID)
+VALUES ('o2','c4','23 Sep 2021','processing','p4');
+INSERT INTO Orders (orderID,customerID,order_date,status,paymentID)
+VALUES ('o3','c3','4 Mar 2021','ordered','p5');
+INSERT INTO Orders (orderID,customerID,order_date,status,paymentID)
+VALUES ('o4','c7','8 Aug 2020','ordered','p3');
+INSERT INTO Orders (orderID,customerID,order_date,status,paymentID)
+VALUES ('o5','c8','30 Jun 2022','processing','p7');
+INSERT INTO Orders (orderID,customerID,order_date,status,paymentID)
+VALUES ('o6','c9','29 Jul 2020','shipped','p8');
+INSERT INTO Orders (orderID,customerID,order_date,status,paymentID)
+VALUES ('o7','c5','11 Dec 2021','shipped','p9');
+INSERT INTO Orders (orderID,customerID,order_date,status,paymentID)
+VALUES ('o8','c6','5 Sep 2020','processing','p4');
+INSERT INTO Orders (orderID,customerID,order_date,status,paymentID)
+VALUES ('o9','c3','29 Mar 2022','processing','p6');
+INSERT INTO Orders (orderID,customerID,order_date,status,paymentID)
+VALUES ('o10','c3','24 Aug 2022','ordered','p2');
