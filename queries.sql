@@ -28,3 +28,9 @@ SELECT * FROM (
     GROUP BY customerID
     ORDER BY COUNT(*) DESC
 ) WHERE ROWNUM = 1;
+
+
+/* check about a particular product their quantity supplier and total quantity and price  */
+select inventoryid, inventory.productid, quantity, price, productname, supplierid from inventory
+join products on inventory.productid=products.productid
+where productname = 'iphone 12';
