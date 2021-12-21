@@ -91,3 +91,34 @@ INSERT INTO PaymentMethod (paymentID,card_num,card_type,customerID)
 VALUES ('p9','4716 7314 7722 9681','mastercard','c1');
 INSERT INTO PaymentMethod (paymentID,card_num,card_type,customerID)
 VALUES ('p10','4532 4484 7351 6258','visa','c5');
+
+
+CREATE TABLE Inventory (
+  inventoryID varchar(5),
+  productID varchar(10),
+  store varchar(5),
+  quantity varchar(5),
+  supplierID varchar(5),
+  PRIMARY KEY (inventoryID)
+);
+
+INSERT INTO Inventory (inventoryID,productID,store,quantity,supplierID)
+VALUES ('i1','pro1',6793,'372','s1');
+INSERT INTO Inventory (inventoryID,productID,store,quantity,supplierID)
+VALUES ('i2','pro2',5870,'339','s4');
+INSERT INTO Inventory (inventoryID,productID,store,quantity,supplierID)
+VALUES ('i3','pro6',8154,'151','s6');
+INSERT INTO Inventory (inventoryID,productID,store,quantity,supplierID)
+VALUES ('i4','pro8',6163,'502','s3');
+INSERT INTO Inventory (inventoryID,productID,store,quantity,supplierID)
+VALUES ('i5','pro4',8769,'321','s7');
+INSERT INTO Inventory (inventoryID,productID,store,quantity,supplierID)
+VALUES ('i6','pro2',7344,'948','s9');
+INSERT INTO Inventory (inventoryID,productID,store,quantity,supplierID)
+VALUES ('i7','pr03',5045,'482','s10');
+INSERT INTO Inventory (inventoryID,productID,store,quantity,supplierID)
+VALUES ('i8','pro10',6095,'374','s6');
+INSERT INTO Inventory (inventoryID,productID,store,quantity,supplierID)
+VALUES ('i9','pro9',1578,'966','s7');
+INSERT INTO Inventory (inventoryID,productID,store,quantity,supplierID)
+VALUES ('i10','pro1',2741,'447','s4');
