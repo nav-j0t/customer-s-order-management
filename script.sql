@@ -60,3 +60,34 @@ INSERT INTO Orders (orderID,customerID,order_date,status,paymentID)
 VALUES ('o9','c3','29 Mar 2022','processing','p6');
 INSERT INTO Orders (orderID,customerID,order_date,status,paymentID)
 VALUES ('o10','c3','24 Aug 2022','ordered','p2');
+
+
+CREATE TABLE PaymentMethod (
+  paymentID varchar(5),
+  card_num varchar(255),
+  card_type varchar(255),
+  customerID varchar(5),
+  PRIMARY KEY (paymentID),
+  FOREIGN KEY (customerID) REFERENCES Customers(customerID)
+);
+
+INSERT INTO PaymentMethod (paymentID,card_num,card_type,customerID)
+VALUES ('p1','4539 9445 8346 6858','visa','c1');
+INSERT INTO PaymentMethod (paymentID,card_num,card_type,customerID)
+VALUES ('p2','4264 5648 9636 3757','mastercard','c4');
+INSERT INTO PaymentMethod (paymentID,card_num,card_type,customerID)
+VALUES ('p3','4716 4799 6247 6694','mastercard','c3');
+INSERT INTO PaymentMethod (paymentID,card_num,card_type,customerID)
+VALUES ('p4','4556 5255 2535 7244','visa','c5');
+INSERT INTO PaymentMethod (paymentID,card_num,card_type,customerID)
+VALUES ('p5','4916 7963 2653 7459','visa','c7');
+INSERT INTO PaymentMethod (paymentID,card_num,card_type,customerID)
+VALUES ('p6','4485 3918 6458 8980','mastercard','c8');
+INSERT INTO PaymentMethod (paymentID,card_num,card_type,customerID)
+VALUES ('p7','4539 3494 4238 2637','visa','c3');
+INSERT INTO PaymentMethod (paymentID,card_num,card_type,customerID)
+VALUES ('p8','4716 6689 2227 8337','mastercard','c2');
+INSERT INTO PaymentMethod (paymentID,card_num,card_type,customerID)
+VALUES ('p9','4716 7314 7722 9681','mastercard','c1');
+INSERT INTO PaymentMethod (paymentID,card_num,card_type,customerID)
+VALUES ('p10','4532 4484 7351 6258','visa','c5');
