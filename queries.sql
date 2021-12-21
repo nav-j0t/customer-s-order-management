@@ -14,3 +14,10 @@ FROM Orders o
 JOIN Customers c ON c.customerID = o.customerID;
 
 
+/* selecing payment method nd customer's name along with ordering the data according to the type of the payment method */
+select p.paymentid, c.name, p.card_type
+from paymentmethod p 
+join customers c on c.customerID = p.customerid
+order by card_type desc;
+
+
