@@ -63,3 +63,10 @@ WHERE supplierID IS NULL
 ORDER BY p.productid;
 
 
+/*  Finally we’ll have the query to find the payment method for orders, this will have different customers and the order placed by corresponding customers, the type of payment method used and at last the status of the order if its shipped, processed or just newly ordered.  */
+
+SELECT c.name, c.age, pm.card_type, o.orderID, status
+FROM Customers c
+JOIN PaymentMethod pm ON c.customerID = pm.customerID
+JOIN Orders o ON o.customerID = c.customerID
+ORDER BY c.name;
