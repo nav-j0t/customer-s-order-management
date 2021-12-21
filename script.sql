@@ -177,3 +177,31 @@ INSERT INTO Products (productID,productname,price,effective_date)
 VALUES ('pro9','Bag',36,'24 Feb 2022');
 INSERT INTO Products (productID,productname,price,effective_date)
 VALUES ('pro10','Table',90,'12 Feb 2022');
+
+CREATE TABLE Suppliers (
+  supplierID varchar(5),
+  suppliername varchar2(255) ,
+  PRIMARY KEY (supplierID));
+
+INSERT INTO Suppliers (supplierID,suppliername)
+VALUES ('s1','Florence Harris');
+INSERT INTO Suppliers (supplierID,suppliername)
+VALUES ('s2','Branden Phillips');
+INSERT INTO Suppliers (supplierID,suppliername)
+VALUES ('s3','Ebony Snider');
+INSERT INTO Suppliers (supplierID,suppliername)
+VALUES ('s4','Ulysses Hayden');
+INSERT INTO Suppliers (supplierID,suppliername)
+VALUES ('s5','Ali Walter');
+INSERT INTO Suppliers (supplierID,suppliername)
+VALUES ('s6','Maya Snow');
+INSERT INTO Suppliers (supplierID,suppliername)
+VALUES ('s7','Amena Murphy');
+INSERT INTO Suppliers (supplierID,suppliername)
+VALUES ('s8','Hilary Coffey');
+INSERT INTO Suppliers (supplierID,suppliername)
+VALUES ('s9','Wyoming Tran');
+INSERT INTO Suppliers (supplierID,suppliername)
+VALUES ('s10','Brandon Smith');
+
+
