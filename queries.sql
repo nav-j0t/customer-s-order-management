@@ -21,3 +21,10 @@ join customers c on c.customerID = p.customerid
 order by card_type desc;
 
 
+/*  now we’ll find the customer who has placed the maximum number of orders   */
+SELECT * FROM (
+    SELECT customerID, COUNT(*)
+    FROM Orders 
+    GROUP BY customerID
+    ORDER BY COUNT(*) DESC
+) WHERE ROWNUM = 1;
