@@ -1,5 +1,5 @@
 # customer-s-order-management
-This was my hands on project for Database Management and is done using 3 different technologies. SQL, Oracle Database Servers and 
+This was my hands on project for Database Management and is done using 3 different technologies. SQL, Oracle Database Servers and docke
 
 
 Proposal:
