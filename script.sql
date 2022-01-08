@@ -4,6 +4,7 @@ CREATE TABLE Customers (
   name varchar(255) default NULL,
   phone varchar(100) default NULL,
   email varchar(255) default NULL,
+  
   age int, 
   address varchar(255) default NULL,
   PRIMARY KEY (customerID));
